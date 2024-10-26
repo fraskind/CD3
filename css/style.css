@@ -25,6 +25,81 @@ body.high-contrast-mode {
     color: #ffff00;
     /* High contrast yellow text */
 }
+/* Dark mode for footer link (avoiding contrast error)*/
+body.dark-mode footer a {
+    color: #80bfff;
+    /* Light blue for readability in dark mode */
+}
+
+/* Dark mode styles for table */
+/* Dark mode link color */
+body.dark-mode table a {
+    color: #cbe5ff;
+    /* Lighter blue for readability in dark mode */
+}
+
+body.dark-mode table {
+    color: #dddddd;
+    /* Light text for dark mode */
+    background-color: #333333;
+    /* Darker background */
+}
+
+body.dark-mode tr:nth-child(even) {
+    background-color: #444444;
+    /* Slightly lighter dark gray for alternating rows */
+}
+
+body.dark-mode tr:nth-child(odd) {
+    background-color: #555555;
+    /* Darker gray for contrast */
+}
+
+/* High contrast mode styles */
+body.high-contrast-mode {
+    background-color: #000000;
+    /* Black background */
+    color: #fdfdfd;
+    /* Off-white text */
+}
+
+/* High contrast links and hover states */
+body.high-contrast-mode a {
+    color: #ffdf00;
+    /* Bright but slightly softened yellow for readability */
+}
+
+body.high-contrast-mode a:hover {
+    color: #fffacd;
+    /* Lighter yellow for hover state */
+}
+
+/* High contrast table styling */
+body.high-contrast-mode table {
+    border-color: #ffdf00;
+}
+
+body.high-contrast-mode th,
+body.high-contrast-mode td {
+    background-color: #333333;
+    /* Dark gray for table background */
+    color: #ffdf00;
+    /* High contrast text */
+}
+
+/* High contrast header and footer links */
+body.high-contrast-mode footer a,
+body.high-contrast-mode header a {
+    color: #ffdf00;
+}
+
+/* Buttons in high contrast */
+body.high-contrast-mode .toggle-container button,
+body.high-contrast-mode .fab-search-button {
+    background-color: #333333;
+    color: #ffdf00;
+    border: 1px solid #ffdf00;
+}
 
 /* Skip to main content */
 body>a {
@@ -135,7 +210,7 @@ tr:nth-child(even) {
 
 /* Apply a different background color to odd rows (optional for extra contrast) */
 tr:nth-child(odd) {
-    background-color: #b1b1b1;
+    background-color: #dbdbdb;
     /* White for odd rows */
 }
 
@@ -151,7 +226,7 @@ h2 {
 th {
     position: sticky;
     top: 0;
-    background-color: #4282d5;
+    background-color: #1e4c87;
     /* Header background color */
     color: white;
     padding: 10px;
@@ -181,7 +256,7 @@ tr:nth-child(even) {
     margin: 10px;
     /* Add some spacing below the heading */
     padding: 10px 20px;
-    background-color: #4282d5;
+    background-color: #1e4c87;
     color: white;
     width: 50px;
     height: 50px;
@@ -206,7 +281,7 @@ tr:nth-child(even) {
     padding: 12px 20px;
     /* Larger padding for mobile-friendly buttons */
     margin: 5px;
-    background-color: #4282d5;
+    background-color: #1e4c87;
     color: white;
     border: none;
     border-radius: 8px;
@@ -215,7 +290,7 @@ tr:nth-child(even) {
 }
 
 .toggle-container button:hover {
-    background-color: #094287;
+    background-color: #073771;
     /* Darken on hover */
 }
 
