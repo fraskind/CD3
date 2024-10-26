@@ -196,3 +196,17 @@ tr:nth-child(even) {
 .fab-search-button:hover {
     background-color: #094287;
 }
+
+
+/* Adjustments for mobile */
+/* Buttons were too small */
+@media (max-width: 600px) {
+    .toggle-container button {
+        font-size: 1.2rem;
+        /* Larger font size on mobile */
+        padding: 15px 25px;
+        /* Increase padding for larger touch targets */
+    }
+}
+
+E
