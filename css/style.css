@@ -193,11 +193,8 @@ main {
 
 /* Responsive Table Design */
 table {
-    overflow-x: auto;
-    display: block;
-    /* Set a minimum width to trigger scrolling on small screens */
     border-collapse: collapse;
-    margin-bottom: 1rem;
+    border-spacing: 0;
 }
 /* Apply a background color to even rows */
 tr:nth-child(even) {
