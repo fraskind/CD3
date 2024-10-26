@@ -121,7 +121,6 @@ main {
 
 /* Responsive Table Design */
 table {
-    overflow-x: auto;
     width: 100%;
     border-collapse: collapse;
     -webkit-overflow-scrolling: touch;
@@ -131,8 +130,6 @@ table {
 
 th,
 td {
-    /* Prevent cell text from wrapping */
-    white-space: nowrap;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
