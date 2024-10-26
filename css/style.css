@@ -197,7 +197,6 @@ table {
     display: block;
     /* Allows horizontal scrolling to work directly on the table */
     width: 100%;
-    min-width: 1000px;
     /* Set a minimum width to trigger scrolling on small screens */
     border-collapse: collapse;
     margin-bottom: 1rem;
@@ -241,6 +240,8 @@ th {
 td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    white-space: normal;
+    /* Allow text to wrap within cells */
 }
 
 /* Alternate row colors for readability */
