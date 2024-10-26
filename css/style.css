@@ -195,8 +195,6 @@ main {
 table {
     overflow-x: auto;
     display: block;
-    /* Allows horizontal scrolling to work directly on the table */
-    width: 100%;
     /* Set a minimum width to trigger scrolling on small screens */
     border-collapse: collapse;
     margin-bottom: 1rem;
