@@ -119,13 +119,14 @@ main {
 /* Responsive Table Design */
 table {
     overflow-x: auto;
+    display: block;
+    /* Allows horizontal scrolling to work directly on the table */
     width: 100%;
+    min-width: 1000px;
+    /* Set a minimum width to trigger scrolling on small screens */
     border-collapse: collapse;
-    -webkit-overflow-scrolling: touch;
-    /* Smoother scrolling on iOS */
     margin-bottom: 1rem;
 }
-
 /* Apply a background color to even rows */
 tr:nth-child(even) {
     background-color: #f9f9f9;
