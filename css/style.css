@@ -11,9 +11,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* Prevent horizontal screen shift */
-    max-width: 100vw;
-    overflow-x: hidden;
 }
 
 /* Dark Mode */
@@ -121,17 +118,12 @@ main {
 
 /* Responsive Table Design */
 table {
+    overflow-x: auto;
     width: 100%;
     border-collapse: collapse;
     -webkit-overflow-scrolling: touch;
     /* Smoother scrolling on iOS */
     margin-bottom: 1rem;
-}
-
-th,
-td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
 /* Apply a background color to even rows */
@@ -147,7 +139,6 @@ tr:nth-child(odd) {
 }
 
 h2 {
-    margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     /* Larger font size */
@@ -227,7 +218,7 @@ tr:nth-child(even) {
     /* Darken on hover */
 }
 
-/* Making buttons bigger */
+/* Making contrast/dark mode buttons bigger */
 @media (max-width: 600px) {
     .toggle-container button {
         font-size: 1.2rem;

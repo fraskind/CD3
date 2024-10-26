@@ -60,10 +60,6 @@ def gen_athlete_page(data, outfile):
    </head>
    <body>
    <a href = "#main">Skip to Main Content</a>
-   <div class="toggle-container">
-      <button onclick="toggleDarkMode()">Dark Mode</button>
-      <button onclick="toggleHighContrastMode()">High Contrast</button>
-   </div>
    <nav>
      <ul>
         <li><a href="../index.html">Home Page</a></li>
@@ -71,6 +67,10 @@ def gen_athlete_page(data, outfile):
         <li><a href="womens.html">Women's Team</a></li>
      </ul>
    </nav>
+   <div class="toggle-container">
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+      <button onclick="toggleHighContrastMode()">High Contrast</button>
+   </div>
    <div class="sticky-name">
       <h1>{data["name"]}</h1>
    </div>
