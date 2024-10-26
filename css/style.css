@@ -199,7 +199,26 @@ tr:nth-child(even) {
 
 
 /* Adjustments for mobile */
-/* Buttons were too small */
+/* General styling for toggle buttons */
+.toggle-container button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    /* Larger padding for mobile-friendly buttons */
+    margin: 5px;
+    background-color: #4282d5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-container button:hover {
+    background-color: #094287;
+    /* Darken on hover */
+}
+
+/* Making buttons bigger */
 @media (max-width: 600px) {
     .toggle-container button {
         font-size: 1.2rem;
@@ -208,5 +227,3 @@ tr:nth-child(even) {
         /* Increase padding for larger touch targets */
     }
 }
-
-E
