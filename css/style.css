@@ -131,8 +131,10 @@ table {
 
 th,
 td {
-    white-space: nowrap;
     /* Prevent cell text from wrapping */
+    white-space: nowrap;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 /* Apply a background color to even rows */
