@@ -163,13 +163,21 @@ main {
 }
 
 /* Responsive Table Design */
+#athlete-result-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling for iOS */
+    width: 100%;
+    /* Ensures it doesn’t exceed screen width */
+    margin-bottom: 1rem;
+    /* Optional spacing below each table */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    -webkit-overflow-scrolling: touch;
-    /* Smoother scrolling on iOS */
-    margin-bottom: 1rem;
 }
+
 
 /* Apply a background color to even rows */
 tr:nth-child(even) {
