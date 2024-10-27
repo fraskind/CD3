@@ -152,7 +152,7 @@ img {
 }
 
 /* animation: scale up to 110% on hover */
-img:hover {
+img:hover, img:active {
     transform: scale(1.1);
     /* Scale up to 110% on hover */
 }
