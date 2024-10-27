@@ -345,3 +345,4 @@ body.high-contrast-mode .fab-search-button {
 /* Triggered state with animation */
 .fade-in.visible {
     animation: fadeIn 0.7s ease-out forwards;
+}
