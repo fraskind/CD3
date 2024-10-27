@@ -164,7 +164,6 @@ main {
 
 /* Responsive Table Design */
 table {
-    overflow-x: auto;
     width: 100%;
     border-collapse: collapse;
     -webkit-overflow-scrolling: touch;
