@@ -335,10 +335,10 @@ body.high-contrast-mode .fab-search-button {
 /* Initial state before animation is triggered */
 .fade-in {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Triggered state with animation */
 .fade-in.visible {
-    animation: fadeIn 0.5s ease-out forwards;
+    animation: fadeIn 0.7s ease-out forwards;
 }
