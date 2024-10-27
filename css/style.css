@@ -276,6 +276,14 @@ body.dark-mode tr:nth-child(odd) {
     /* Darker gray for contrast */
 }
 
+/* Buttons in high contrast */
+body.dark-mode .toggle-container button,
+body.dark-mode .fab-search-button {
+    background-color: #ffffff;
+    color: #2e456c;
+    border: 1px solid #ffffff;
+}
+
 /* High contrast mode styles */
 body.high-contrast-mode {
     background-color: #000000;
