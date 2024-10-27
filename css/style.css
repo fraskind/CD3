@@ -166,6 +166,7 @@ main {
 table {
     overflow-x: auto;
     width: 100%;
+    display: block;
     border-collapse: collapse;
     -webkit-overflow-scrolling: touch;
     /* Smoother scrolling on iOS */
