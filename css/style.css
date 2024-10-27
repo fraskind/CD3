@@ -194,6 +194,7 @@ h2 {
 
 /* Sticky header for tables */
 th {
+    width: 100%;
     position: sticky;
     top: 0;
     background-color: #205397;
@@ -209,6 +210,7 @@ th {
 
 /* Table cell styling */
 td {
+    width: 100%;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
