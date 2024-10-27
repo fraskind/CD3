@@ -81,7 +81,7 @@ def gen_athlete_page(data, outfile):
    <main id = "main">
       <section id= "athlete-sr-table">
          <h2>Athlete's Seasonal Records (SR) per Year</h2>
-            <table>
+            <table class="fade-in">
                   <thead>
                      <tr>
                         <th> Year </th>
@@ -111,7 +111,7 @@ def gen_athlete_page(data, outfile):
                            <i class="fa fa-search"></i>
                         </button>
                         <section id="athlete-result-table">
-                           <table id="athlete-table">
+                           <table id="athlete-table" class="fade-in">
                               <thead>
                                  <tr>
                                     <th>Race</th>
@@ -145,6 +145,23 @@ def gen_athlete_page(data, outfile):
                      </section>
                      </main>
                         <script>
+                           document.addEventListener("DOMContentLoaded", function () {
+                           const fadeInElements = document.querySelectorAll('.fade-in');
+
+                           function checkVisibility() {
+                              fadeInElements.forEach((element) => {
+                                    const rect = element.getBoundingClientRect();
+                                    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                                       element.classList.add('visible');
+                                    }
+                              });
+                           }
+
+                              // Check visibility on scroll and on initial load
+                              window.addEventListener("scroll", checkVisibility);
+                              checkVisibility();
+                           });
+
                            function toggleDarkMode() {
                                  document.body.classList.toggle("dark-mode");
                            }

@@ -1,3 +1,12 @@
+/* Disable animations */
+@media (prefers-reduced-motion: reduce) {
+    /* Disable transitions and animations */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 /* General styling */
 /* Base Styles for Mobile */
 body {
@@ -141,6 +150,12 @@ img {
     /* Shadow for images */
 }
 
+/* animation: scale up to 110% on hover */
+img:hover {
+    transform: scale(1.1);
+    /* Scale up to 110% on hover */
+}
+
 /* Main content */
 main {
     padding: 30px;
@@ -164,7 +179,7 @@ tr:nth-child(even) {
 
 /* Apply a different background color to odd rows (optional for extra contrast) */
 tr:nth-child(odd) {
-    background-color: #b1b1b1;
+    background-color: #cecece;
     /* White for odd rows */
 }
 
@@ -180,7 +195,7 @@ h2 {
 th {
     position: sticky;
     top: 0;
-    background-color: #4282d5;
+    background-color: #205397;
     /* Header background color */
     color: white;
     padding: 10px;
@@ -210,7 +225,7 @@ tr:nth-child(even) {
     margin: 10px;
     /* Add some spacing below the heading */
     padding: 10px 20px;
-    background-color: #4282d5;
+    background-color: #205397;
     color: white;
     width: 50px;
     height: 50px;
@@ -301,4 +316,29 @@ body.high-contrast-mode .fab-search-button {
     background-color: #333333;
     color: #ffdf00;
     border: 1px solid #ffdf00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Slight upward translation */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state before animation is triggered */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Triggered state with animation */
+.fade-in.visible {
+    animation: fadeIn 0.5s ease-out forwards;
 }
