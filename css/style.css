@@ -174,7 +174,7 @@ main {
 }
 
 table {
-    min-width: 600px;
+    min-width: 800px;
     /* Adjust based on your content width */
     width: 100%;
     border-collapse: collapse;
