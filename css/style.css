@@ -1,5 +1,6 @@
 /* Disable animations */
 @media (prefers-reduced-motion: reduce) {
+
     /* Disable transitions and animations */
     * {
         animation: none !important;
@@ -152,7 +153,8 @@ img {
 }
 
 /* animation: scale up to 110% on hover */
-img:hover, img:active {
+img:hover,
+img:active {
     transform: scale(1.1);
     /* Scale up to 110% on hover */
 }
@@ -161,22 +163,15 @@ img:hover, img:active {
 main {
     padding: 30px;
 }
-/* Restrict the table container to manage scrolling */
-.table-container {
+
+/* Responsive Table Design */
+table {
     overflow-x: auto;
     width: 100%;
-    /* Container takes up full width of the screen */
-    -webkit-overflow-scrolling: touch;
-    /* Smooth scrolling for iOS */
-}
-
-/* Make the table itself wider than the container to trigger horizontal scroll */
-.table-container table {
-    min-width: 600px;
-    /* Adjust based on your content width */
     border-collapse: collapse;
-    white-space: nowrap;
-    /* Prevents wrapping of table cells */
+    -webkit-overflow-scrolling: touch;
+    /* Smoother scrolling on iOS */
+    margin-bottom: 1rem;
 }
 
 /* Apply a background color to even rows */
@@ -350,4 +345,3 @@ body.high-contrast-mode .fab-search-button {
 /* Triggered state with animation */
 .fade-in.visible {
     animation: fadeIn 0.7s ease-out forwards;
-}
