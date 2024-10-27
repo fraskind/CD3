@@ -80,6 +80,7 @@ def gen_athlete_page(data, outfile):
    </header>
    <main id = "main">
       <section id= "athlete-sr-table">
+      <div class="table-container">
          <h2>Athlete's Seasonal Records (SR) per Year</h2>
             <table class="fade-in">
                   <thead>
@@ -103,6 +104,7 @@ def gen_athlete_page(data, outfile):
    html_content += '''                   
                 </tbody>
                   </table>
+                  </div>
                      </section>
 
                         <h2>Race Results</h2>
@@ -111,6 +113,7 @@ def gen_athlete_page(data, outfile):
                            <i class="fa fa-search"></i>
                         </button>
                         <section id="athlete-result-table">
+                        <div class="table-container">
                            <table id="athlete-table" class="fade-in">
                               <thead>
                                  <tr>
@@ -142,6 +145,7 @@ def gen_athlete_page(data, outfile):
                               </tbody>
 
                         </table>
+                        </div>
                      </section>
                      </main>
                         <script>
