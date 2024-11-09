@@ -62,6 +62,60 @@
     }
 }
 
+@media (prefers-contrast: high) {
+    /* High Contrast Mode */
+    body.high-contrast-mode {
+        background-color: #000000;
+        color: #ffff00;
+        /* High contrast yellow text */
+    }
+    /* High contrast mode styles */
+    body.high-contrast-mode {
+        background-color: #000000;
+        /* Black background */
+        color: #fdfdfd;
+        /* Off-white text */
+    }
+
+    /* High contrast links and hover states */
+    body.high-contrast-mode a {
+        color: #ffdf00;
+        /* Bright but slightly softened yellow for readability */
+    }
+
+    body.high-contrast-mode a:hover {
+        color: #fffacd;
+        /* Lighter yellow for hover state */
+    }
+
+    /* High contrast table styling */
+    body.high-contrast-mode table {
+        border-color: #ffdf00;
+    }
+
+    body.high-contrast-mode th,
+    body.high-contrast-mode td {
+        background-color: #333333;
+        /* Dark gray for table background */
+        color: #ffdf00;
+        /* High contrast text */
+    }
+
+    /* High contrast header and footer links */
+    body.high-contrast-mode footer a,
+    body.high-contrast-mode header a {
+        color: #ffdf00;
+    }
+
+    /* Buttons in high contrast */
+    body.high-contrast-mode .toggle-container button,
+    body.high-contrast-mode .fab-search-button {
+        background-color: #333333;
+        color: #ffdf00;
+        border: 1px solid #ffdf00;
+    }
+}
+
 /* General styling */
 /* Base Styles for Mobile */
 body {
