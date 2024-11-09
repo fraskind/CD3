@@ -242,6 +242,11 @@ body.dark-mode footer a {
     /* Light blue for readability in dark mode */
 }
 
+body.dark-mode a {
+    color: #4A90E2;
+    /* Lighter blue for sufficient contrast */
+}
+
 /* Dark mode styles for table */
 /* Dark mode link color */
 body.dark-mode table a {
