@@ -63,8 +63,8 @@ def gen_athlete_page(data, outfile):
    <nav>
      <ul>
         <li><a href="../index.html">Home Page</a></li>
-        <li><a href="mens.html">Men's Team</a></li>
-        <li><a href="womens.html">Women's Team</a></li>
+        <li><a href="../mens.html">Men's Team</a></li>
+        <li><a href="../womens.html">Women's Team</a></li>
      </ul>
    </nav>
    <div class="toggle-container">
