@@ -170,6 +170,16 @@ def gen_athlete_page(data, outfile):
                            function toggleHighContrastMode() {
                                  document.body.classList.toggle("high-contrast-mode");
                            }
+                           // Add the image error handling script
+                           document.querySelectorAll('img').forEach(img => {
+                              img.onerror = function() {
+                                 
+                                 this.onerror = null; // Prevents infinite loop if default image missing
+                                 this.src = '../images/default_image.jpg';
+                                 this.alt = ""
+                                 console.log("image is "+this.src)
+                              };
+                           });
                         </script>
                      <footer>
                      <p>
