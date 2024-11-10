@@ -21,37 +21,37 @@
 
 @media (prefers-color-scheme: dark) {
     /* Dark Mode */
-    body.dark-mode {
+    body {
         background-color: #000000;
         color: #ffffff;
     }
     /* Dark mode styles for table */
     /* Dark mode link color */
-    body.dark-mode table a {
+    table a {
         color: #cbe5ff;
         /* Lighter blue for readability in dark mode */
     }
 
-    body.dark-mode table {
+    table {
         color: #dddddd;
         /* Light text for dark mode */
         background-color: #333333;
         /* Darker background */
     }
 
-    body.dark-mode tr:nth-child(even) {
+    body tr:nth-child(even) {
         background-color: #444444;
         /* Slightly lighter dark gray for alternating rows */
     }
 
-    body.dark-mode tr:nth-child(odd) {
+    body tr:nth-child(odd) {
         background-color: #555555;
         /* Darker gray for contrast */
     }
 
     /* Buttons in high contrast */
-    body.dark-mode .toggle-container button,
-    body.dark-mode .fab-search-button {
+    .toggle-container button,
+    fab-search-button {
         background-color: #ffffff;
         color: #2e456c;
         border: 1px solid #ffffff;
