@@ -22,8 +22,8 @@
 @media (prefers-color-scheme: dark) {
     /* Dark Mode */
     body {
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #000000 !important;
+        color: #ffffff !important;
     }
     /* Dark mode styles for table */
     /* Dark mode link color */
