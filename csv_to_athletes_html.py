@@ -109,9 +109,6 @@ def gen_athlete_page(data, outfile):
 
                         <h2>Race Results</h2>
                         <!-- Floating Action Button above the table -->
-                        <button class="fab-search-button" aria-label="Search">
-                           <i class="fa fa-search"></i>
-                        </button>
                         <section id="athlete-result-table">
                         <div class="table-container">
                            <table id="athlete-table" class="fade-in">
